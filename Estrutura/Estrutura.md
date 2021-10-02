@@ -13,7 +13,7 @@ void main() {
   
   num n = 4 + 7 / 8; // 4.875
 
-  String s = 'texto ${2 + 3}' + ' concatecado'; // 'texto 5 concatecado'
+  String s = 'texto ${2 + 3}' + ' concatecado'; // 'texto 5 concatenado'
 }
 ```
 
@@ -51,7 +51,9 @@ void main() {
 ## Operadores booleanos
 ```dart
 void main() {
+  // No OR em cadeia, não importa quantos false há, se houver ao menos um true, não importando em que posição, começo, meio ou no final,o resultado será true.
   bool or = false || false || false || true; // true
+  // No AND em cadeia, não importa quantos true há, se houver ao menos um false, não importando em que posição, começo, meio ou no final,o resultado será false.
   bool and = true && true && true && false; // false
 }
 ```
